@@ -16,4 +16,4 @@
 
 ## Architecture Flow
 
-Frontend → Backend → PostgreSQL
+Frontend → Backend → mysql
