@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Docker 3 Tier Application</title>
+  </head>
+
+  <body>
+    <h1>Docker 3-Tier Application</h1>
+
+    <p>Frontend Container is Running</p>
+
+    <button onclick="checkBackend()">Check Backend</button>
+
+    <p id="result"></p>
+
+    <script>
+      async function checkBackend() {
+        try {
+          const response = await fetch("/api");
+          const data = await response.text();
+
+          document.getElementById("result").innerText =
+            "Backend Response: " + data;
+        } catch (error) {
+          document.getElementById("result").innerText =
+            "Backend connection failed";
+        }
+      }
+    </script>
+  </body>
+</html>
