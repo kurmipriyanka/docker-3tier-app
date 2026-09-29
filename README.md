@@ -4,7 +4,7 @@
 
 - Frontend: Nginx
 - Backend: Java Spring Boot
-- Database: PostgreSQL
+- Database: mysql
 - Container orchestration: Docker Compose
 - Cloud platform: AWS EC2
 
